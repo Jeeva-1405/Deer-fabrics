@@ -668,7 +668,7 @@
   })();
 
   // rise-in
-  const riseTargets = $$('.sec-head, .swatch, .lab__grid, .stage, .karur__copy, .ledger, .slip, .hero__copy');
+  const riseTargets = $$('.sec-head, .swatch, .lab__grid, .stage, .karur__copy, .ledger, .faq__list, .slip, .hero__copy');
   riseTargets.forEach(el => el.setAttribute('data-rise', ''));
   const rio = new IntersectionObserver(es => es.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('is-in'); rio.unobserve(e.target); }
